@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Add icon library-->
+<link rel="stylesheet"    
+href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+    background-color: rgb(74, 114, 101);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+input{
+    width: 10cm;
+    height:20%;
+}
+.a{
+background-color: blue; 
+width: 10.2cm;   
+border: none;
+border-radius: 5px;
+color: white;
+text-transform: uppercase;
+}
+.a:hover
+{
+    background-color: black;
+    color: rgb(7, 70, 7);
+    font-weight: 900;
+}
+.b{
+   background-color: mediumslateblue;
+   width: 10.2cm;  
+   border: none;
+   border-radius: 5px;
+}
+   .b:hover
+   {
+background-color: antiquewhite;
+   }
+
+.c{
+    background-color: mediumslateblue;
+    width: 10.2cm;  
+    border: none;
+    border-radius: 5px;
+}
+.c:hover 
+{
+    background-color: beige;
+}
+.d{
+    background-color: orangered;
+    width: 10.2cm;
+    border: none;
+    border-radius: 5px;  
+}
+.d:hover{
+    background-color: aquamarine;
+}
+.e{
+    background-color: red;
+    width: 10.2cm;  
+    border: none;
+
+    border-radius: 5px;
+}
+.e:hover
+{
+    background-color: blueviolet;
+}
+fieldset
+{
+    width: 10cm;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+
+h3, h5
+{
+    text-align: center;
+}
+
+h3
+{
+    text-transform: uppercase;
+    font-size: 23px;
+}
+</style>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br>
+    <br><br>
+    <center>
+<form>
+<fieldset>       
+<h3>GIKONKO TSS</h3>
+<h5>Social Media Login</h5>
+<input type="email"placeholder="enter your email" id="a"><br><br>
+<input type="password"placeholder="enter your password" id="b"><br><br>
+<button class="a" onclick="msg();">login</button><br><br>
+<button class="b" ><i class="fa fa-facebook"></i> with facebook</button><br><br>
+<button class="c"><i class="fa fa-twitter"></i>with Twitter</button><br><br>
+<button class="d"><i class="fa fa-google"></i>with Google</button><br><br>
+<button class="e"><i class="fa fa-instagram"></i> with Instagram</button><br><br>
+<button class="e"><i class="fa fa-instagram"></i> with youtube</button><br><br>
+
+<script>
+    function msg()
+    {
+        var email=document.getElementById("a").value;
+        var password=document.getElementById("b").value;
+
+        if(email=="")
+        {
+            alert("please enter your email");
+            return false;
+        }
+        
+
+       else if(password=="")
+        {
+            alert("please enter your password");
+            return false;
+        }
+
+
+       else if("password<6")
+        {
+            alert("your password is to long");
+            return false;
+        }
+
+        else
+        {
+            alert("your finished to login")
+        }
+    }
+</script>
+
+</form>
+</center>
+</body>
+</html>
